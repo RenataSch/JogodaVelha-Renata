@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Jogo da Velha Online</h1>
+        <nav>
+            <button class="btn-home" onclick="goHome()">Home</button>
+            <button class="btn-login" onclick="showLogin()">Login</button>
+            <button class="btn-como-jogar" onclick="scrollToComoJogar()">Como Jogar</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="explicacao">
+            <h2>O que é o Jogo da Velha?</h2>
+            <p>O Jogo da Velha, também conhecido internacionalmente como Tic-Tac-Toe, é um dos jogos mais antigos e simples do mundo. Sua origem remonta à Antiga Roma, onde era conhecido como "Terni Lapilli", jogado com pedras e círculos em um tabuleiro de 3x3. A versão moderna, como conhecemos hoje, começou a ser popularizada no século XIX.</p>
+            <p>Embora seja jogado por duas pessoas, o Jogo da Velha é uma paixão mundial, com milhões de pessoas em todo o planeta se divertindo com este desafio mental. É um jogo de estratégia simples, mas que requer atenção para garantir a vitória.</p>
+        </section>
+
+        <section class="como-jogar" id="como-jogar">
+            <h2>Como Jogar</h2>
+            <p>O Jogo da Velha é jogado em um tabuleiro de 3x3, com duas pessoas alternando para colocar suas marcas (geralmente "X" e "O") em um dos espaços vazios do tabuleiro. O objetivo do jogo é ser o primeiro a alinhar três marcas em uma linha, coluna ou diagonal.</p>
+            <p>O jogo começa com o jogador "X" e os jogadores se revezam colocando suas marcas. Ao preencher todos os espaços ou conseguir alinhar três símbolos consecutivos, o jogo termina. Se todos os espaços forem preenchidos sem que haja um vencedor, o jogo termina empatado.</p>
+        </section>
+
+        <!-- Popup de Login (inicialmente oculto) -->
+        <div class="popup" id="login-popup" style="display: none;">
+            <div class="popup-content">
+                <h2>Login</h2>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" placeholder="Digite seu nome">
+                <button onclick="login()">Entrar</button>
+                <button onclick="closeLogin()">Fechar</button>
+            </div>
+        </div>
+
+        <div class="footer-buttons">
+            <a href="doisogadores.html" class="btn-jogar-maquina">Jogar contra a Máquina</a>
+            <a href="index.html" class="btn-jogar-dois-jogadores">Dois Jogadores</a>
+        </div>
+    
+    </main>
+
+    <footer class="footer">
+
+        <p>© 2025 Jogo da Velha. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>
